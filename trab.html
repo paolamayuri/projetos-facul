@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Atividades</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+        table{
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <!--Lista ordenada-->
+    <ol type="I">
+        <li>Amarelo</li>
+        <li>Azul</li>
+        <li>Branco</li>
+    </ol>
+    <!--Lista não ordenada-->
+    <ul>
+        <li>Roxo</li>
+        <li>Preto</li>
+        <li>Verde</li>
+    </ul>
+    
+    <!--Tabela 1-->
+    <table>
+        <caption>Boletos</caption>
+
+        <tr>
+            <th>Conta</th>
+            <th>Valor</th>
+            <th>Vencimento</th>
+        </tr>
+        <tr>
+            <td>Água</td>
+            <td>110,60</td>
+            <td>24/05</td>
+        </tr>
+        <tr>
+            <td>Energia</td>
+            <td>300,50</td>
+            <td>15/05</td>
+        </tr>
+        <tr>
+            <td>Internet</td>
+            <td>99,90</td>
+            <td>27/95</td>
+        </tr>
+    </table>
+
+    <br> <br>
+    <!--Tabela 2-->
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th colspan="2">Filhos</th>
+        </tr>
+        <tr>
+            <td>Mariana</td>
+            <td>Marcos</td>
+            <td>Luana</td>
+        </tr>
+        <tr>  
+            <td>João</td>
+            <td>Felipe</td>
+            <td>Larissa</td>
+        </tr>  
+    </table>
+    <br> <br>
+    <!--Tabela 3-->
+    <table>
+        <caption>Cadastros</caption>
+        <tr>
+            <th>Nome:</th>
+            <td>Paulo</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Telefones:</th>
+            <td>99986-3547</td>
+        </tr>
+        <tr>
+            <td>4002-8922</td>
+        </tr>
+    </table>
+    <br> <br>
+    <!--Formulário 1-->
+    <form action="enviar.py">
+        <fieldset>
+            <legend>Dados para o Cadastro</legend>
+            Nome: <br>
+            <input type="text" name="nome"><br>
+
+            Sobrenome: <br>
+            <input type="text" name="sobrenome"><br>
+
+            Mês: <br>
+            <input type="month">
+
+            <input type="submit" value="Enviar">
+        </form>
+        </fieldset>
+    </form>
+    <br> <br>
+    <!--Formulário 2-->
+    <form action="enviar.py">
+        Qual seus animais preferidos? <br> <br>
+        <input type="checkbox" name="animais" value="cachorro"> Cachorro<br>
+        <input type="checkbox" name="animais" value="gato"> Gato<br>
+        <input type="checkbox" name="animais" value="jacaré"> Jacaré<br>
+        <input type="checkbox" name="animais" value="tigre"> Tigre<br>   
+        <input type="checkbox" name="animais" value="macaco"> Macaco<br>
+        <br> <br>
+    </form>
+
+    <form action="enviar.py">
+        O que você acha sobre pombas? <br>
+        <textarea name="outroAnimal" cols="30" rows="10">Deixe sua opinião aqui.</textarea> 
+    <br>
+    <input type="submit" value="Enviar">
+    </form>
+    <br> <br>
+
+    <!--Formulário 3-->
+    <form action="enviar.py">
+        Qual sua <strong>marca</strong> preferida? <br> <br>
+        <select name="consoles">
+            <option value="playstation">Playstation</option>
+            <option value="xbox">Xbox</option>
+            <option value="nintendo">Nintendo</option>
+        </select> 
+        <br>
+        <input type="submit" value="Enviar">
+
+    </form>
+    <br> <br>
+
+    <!--Formulário 4-->
+    <form action="enviar.py">
+        Qual seu estado civil? <br>
+        <input type="radio" name="estadoCivil" value="casado"> Casado<br>
+        <input type="radio" name="solteiro"> Solteiro <br>
+        <input type="radio" name="Enrolado"> Enrolado <br>
+        <input type="radio" name="outros"> Outros <br>
+        <input type="submit" value="Enviar">
+    </form>
+    <br> <br>
+
+    <!--Formulário 5-->
+        <form action="enviar.py">
+        <fieldset>
+            <legend>Login:</legend>
+            Email:<br>
+            <input type="email"> <br>
+            Senha:<br>
+            <input type="text" name="senha"><br><br>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </fieldset>
+    </form>
+</body>
+</html>
