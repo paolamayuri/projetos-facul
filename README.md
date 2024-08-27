@@ -1,2 +1,2 @@
 # projetos-facul
-Projetos e exercícios da faculdade de ADS.
+Projetos e exercícios realizados durante o curso de ADS.
